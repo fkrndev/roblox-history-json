@@ -1,0 +1,18 @@
+{
+  "scenarios": [
+    {
+      "id": "hattin-1187",
+      "title": "Pertempuran Hattin",
+      "file": "hattin-1187.json",
+      "year": 1187,
+      "description": "Salahuddin Al-Ayyubi vs Kerajaan Yerusalem"
+    },
+    {
+      "id": "ain-jalut-1260",
+      "title": "Pertempuran Ain Jalut",
+      "file": "ain-jalut-1260.json",
+      "year": 1260,
+      "description": "Mamluk vs Mongol"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "ain-jalut-1260",
+  "title": "Pertempuran Ain Jalut",
+  "year": 1260,
+  "description": "Pasukan Mamluk Mesir di bawah Saifuddin Qutuz menghentikan ekspansi Mongol di Palestina. Pertempuran pertama kalinya pasukan Mongol kalah telak.",
+  "durationDays": 1,
+  "mapSize": 300,
+  "landmarks": [
+    { "name": "Ain Jalut", "x": 0, "z": 0, "type": "city" },
+    { "name": "Bukit Gilboa", "x": -80, "z": 50, "type": "mountain" },
+    { "name": "Lembah Jezreel", "x": 50, "z": -30, "type": "river" }
+  ],
+  "factions": [
+    {
+      "id": "mamluk",
+      "name": "Kesultanan Mamluk",
+      "color": "#1a4f8a"
+    },
+    {
+      "id": "mongol",
+      "name": "Ilkhanat Mongol",
+      "color": "#8a5510"
+    }
+  ],
+  "units": [
+    {
+      "id": "qutuz",
+      "name": "Saifuddin Qutuz",
+      "faction": "mamluk",
+      "role": "commander",
+      "path": [
+        { "day": 0, "hour": 5, "x": -100, "z": 80, "event": "Pasukan Mamluk menyergap di lembah" },
+        { "day": 0, "hour": 9, "x": -40, "z": 40, "event": "Pura-pura mundur untuk memancing Mongol" },
+        { "day": 0, "hour": 12, "x": 0, "z": 0, "event": "Penyergapan berhasil, pasukan cadangan menyerang" },
+        { "day": 0, "hour": 16, "x": 40, "z": -20, "event": "Mengusir sisa pasukan Mongol" }
+      ]
+    },
+    {
+      "id": "baibars",
+      "name": "Baibars",
+      "faction": "mamluk",
+      "role": "commander",
+      "path": [
+        { "day": 0, "hour": 5, "x": -90, "z": 90 },
+        { "day": 0, "hour": 9, "x": -50, "z": 50, "event": "Memimpin pasukan cadangan tersembunyi" },
+        { "day": 0, "hour": 12, "x": 10, "z": 10, "event": "Serang dari sayap, memutus barisan Mongol" },
+        { "day": 0, "hour": 16, "x": 50, "z": -10 }
+      ]
+    },
+    {
+      "id": "kitbuqa",
+      "name": "Kitbuqa Noyan",
+      "faction": "mongol",
+      "role": "commander",
+      "path": [
+        { "day": 0, "hour": 6, "x": 100, "z": -80, "event": "Mongol mendekati Ain Jalut dengan percaya diri" },
+        { "day": 0, "hour": 10, "x": 40, "z": -30, "event": "Mengejar pasukan Mamluk yang pura-pura mundur" },
+        { "day": 0, "hour": 12, "x": 5, "z": -5, "event": "Terjebak, disergap dari semua sisi" },
+        { "day": 0, "hour": 14, "x": 20, "z": 10, "event": "Kitbuqa gugur dalam pertempuran" }
+      ]
+    },
+    {
+      "id": "mongol_cavalry",
+      "name": "Pasukan Berkuda Mongol",
+      "faction": "mongol",
+      "role": "soldier",
+      "path": [
+        { "day": 0, "hour": 6, "x": 110, "z": -70 },
+        { "day": 0, "hour": 10, "x": 50, "z": -20 },
+        { "day": 0, "hour": 12, "x": 10, "z": 0 },
+        { "day": 0, "hour": 14, "x": 30, "z": 20 }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "day": 0,
+      "hour": 5,
+      "title": "Pasukan Mamluk bersiap",
+      "description": "Qutuz menempatkan pasukan di lembah sempit dekat Ain Jalut, dengan pasukan cadangan tersembunyi.",
+      "factionId": "mamluk"
+    },
+    {
+      "day": 0,
+      "hour": 9,
+      "title": "Strategi pura-pura mundur",
+      "description": "Pasukan depan Mamluk mundur teratur untuk memancing Mongol masuk ke jebakan.",
+      "factionId": "mamluk"
+    },
+    {
+      "day": 0,
+      "hour": 12,
+      "title": "Penyergapan dimulai",
+      "description": "Pasukan cadangan Baibars menyerang dari sayap. Mongol terkepung di lembah.",
+      "factionId": "mamluk"
+    },
+    {
+      "day": 0,
+      "hour": 14,
+      "title": "Kitbuqa gugur",
+      "description": "Komandan Mongol Kitbuqa Noyan tewas dalam pertempuran. Pasukan Mongol kocak-kacau.",
+      "factionId": "mongol"
+    }
+  ]
+}

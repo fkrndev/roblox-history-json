@@ -1,0 +1,119 @@
+{
+  "id": "hattin-1187",
+  "title": "Pertempuran Hattin",
+  "year": 1187,
+  "description": "Salahuddin Al-Ayyubi menghadapi pasukan Salib Kerajaan Yerusalem di dekat Tanduk Hattin. Kekalahan pasukan Salib membuka jalan bagi pembebasan Yerusalem.",
+  "durationDays": 2,
+  "mapSize": 400,
+  "landmarks": [
+    { "name": "Tanduk Hattin", "x": 0, "z": 0, "type": "mountain" },
+    { "name": "Tiberias", "x": 150, "z": -80, "type": "city" },
+    { "name": "Danau Tiberias", "x": 180, "z": -50, "type": "river" },
+    { "name": "Kafr Sabt", "x": -100, "z": 60, "type": "city" }
+  ],
+  "factions": [
+    {
+      "id": "ayyubid",
+      "name": "Dinasti Ayyubiyah",
+      "color": "#1a6b1a"
+    },
+    {
+      "id": "crusader",
+      "name": "Kerajaan Yerusalem",
+      "color": "#8a1a1a"
+    }
+  ],
+  "units": [
+    {
+      "id": "saladin",
+      "name": "Salahuddin Al-Ayyubi",
+      "faction": "ayyubid",
+      "role": "commander",
+      "path": [
+        { "day": 0, "hour": 5, "x": -150, "z": 100 },
+        { "day": 0, "hour": 10, "x": -80, "z": 50, "event": "Pasukan Ayyubiyah berkumpul di Kafr Sabt" },
+        { "day": 0, "hour": 14, "x": -30, "z": 20, "event": "Mengepung dari selatan, memblokir akses air" },
+        { "day": 0, "hour": 20, "x": 20, "z": 10, "event": "Membakar semak untuk menutup jalan mundur" },
+        { "day": 1, "hour": 6, "x": 10, "z": 5, "event": "Serangan fajar ke kem Salib" },
+        { "day": 1, "hour": 12, "x": 0, "z": 0, "event": "Pasukan Salib menyerah di Tanduk Hattin" }
+      ]
+    },
+    {
+      "id": "saladin_cavalry",
+      "name": "Pasukan Berkuda Ayyubiyah",
+      "faction": "ayyubid",
+      "role": "soldier",
+      "path": [
+        { "day": 0, "hour": 5, "x": -140, "z": 110 },
+        { "day": 0, "hour": 12, "x": -60, "z": 60 },
+        { "day": 0, "hour": 16, "x": -10, "z": 30, "event": "Mengejar pasukan Salib yang kehausan" },
+        { "day": 1, "hour": 8, "x": 5, "z": 15 },
+        { "day": 1, "hour": 12, "x": 0, "z": 0 }
+      ]
+    },
+    {
+      "id": "baldwin",
+      "name": "Raja Guy de Lusignan",
+      "faction": "crusader",
+      "role": "commander",
+      "path": [
+        { "day": 0, "hour": 4, "x": 150, "z": -80, "event": "Berangkat dari Tiberias" },
+        { "day": 0, "hour": 10, "x": 80, "z": -30, "event": "Mars di panas terik tanpa air" },
+        { "day": 0, "hour": 16, "x": 30, "z": -10, "event": "Terkepung, tidak bisa mencapai danau" },
+        { "day": 0, "hour": 22, "x": 15, "z": 5, "event": "Berkemah di Tanduk Hattin, kehausan parah" },
+        { "day": 1, "hour": 6, "x": 10, "z": 10, "event": "Mencoba menerobos kepungan" },
+        { "day": 1, "hour": 11, "x": 5, "z": 5, "event": "Tent Salib jatuh, raja ditawan" }
+      ]
+    },
+    {
+      "id": "crusader_infantry",
+      "name": "Pasukan Infanteri Salib",
+      "faction": "crusader",
+      "role": "soldier",
+      "path": [
+        { "day": 0, "hour": 4, "x": 160, "z": -70 },
+        { "day": 0, "hour": 12, "x": 90, "z": -20 },
+        { "day": 0, "hour": 18, "x": 40, "z": 0 },
+        { "day": 1, "hour": 7, "x": 20, "z": 15 },
+        { "day": 1, "hour": 11, "x": 10, "z": 10 }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "day": 0,
+      "hour": 4,
+      "title": "Pasukan Salib berangkat dari Tiberias",
+      "description": "Raja Guy memutuskan meninggalkan Tiberias untuk menghadapi Salahuddin, meski tanpa persediaan air yang cukup.",
+      "factionId": "crusader"
+    },
+    {
+      "day": 0,
+      "hour": 12,
+      "title": "Panas terik melanda",
+      "description": "Pasukan Salib mars di bawah matahari menyengat tanpa akses ke Danau Tiberias. Morale menurun drastis.",
+      "factionId": "crusader"
+    },
+    {
+      "day": 0,
+      "hour": 20,
+      "title": "Salahuddin membakar semak",
+      "description": "Api menutup jalan mundur pasukan Salib dan menambah penderitaan mereka sepanjang malam.",
+      "factionId": "ayyubid"
+    },
+    {
+      "day": 1,
+      "hour": 6,
+      "title": "Serangan fajar",
+      "description": "Salahuddin memerintahkan serangan menyeluruh saat faja. Pasukan Salib yang kehausan tidak mampu bertahan.",
+      "factionId": "ayyubid"
+    },
+    {
+      "day": 1,
+      "hour": 11,
+      "title": "Tent Salib jatuh",
+      "description": "Relik suci Tent Salib direbut pasukan Ayyubiyah. Raja Guy ditawan. Pertempuran berakhir dengan kemenangan telak Salahuddin.",
+      "factionId": "ayyubid"
+    }
+  ]
+}
